@@ -12,10 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var dataFetcher: DataFetcher?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        dataFetcher = DataFetcher(url:"https://itunes.apple.com/us/rss/toppaidapplications/limit=100/json")
         return true
     }
 
