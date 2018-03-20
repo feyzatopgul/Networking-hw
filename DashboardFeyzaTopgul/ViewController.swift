@@ -9,6 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var textDisplay: UILabel!
+    
+    @IBAction func controlActivated (control: UIControl) {
+        if let appDel = UIApplication.shared.delegate as? AppDelegate {
+            self.textDisplay.text = appDel.dataFetcher?.nextTitle
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let appDel = UIApplication.shared.delegate as? AppDelegate {
+            self.textDisplay.text = appDel.dataFetcher?.currentTitle
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

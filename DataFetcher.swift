@@ -11,6 +11,27 @@ import Foundation
 class DataFetcher {
     let url: String
     var appTitles: [String]?
+    private var currentTitlePosition = 0
+    var currentTitle: String {
+        if let titles = appTitles, titles.count > 0 {
+            return titles [currentTitlePosition]
+        }
+        else {
+            return "No Data"
+        }
+    }
+    var nextTitle: String {
+        if let titles = appTitles, titles.count > 0 {
+            currentTitlePosition += 1
+            if currentTitlePosition > titles.count - 1 {
+                currentTitlePosition = 0
+            }
+            return titles [currentTitlePosition]
+        }
+        else {
+            return "No Data"
+        }
+    }
     init?(url:String) {
         self.url = url
         if let fetcherURL = URL (string: url) {
