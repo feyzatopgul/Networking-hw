@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @objc func updateDisplay () {
+        DispatchQueue.main.async {
+            if let appDel = UIApplication.shared.delegate as? AppDelegate {
+                self.textDisplay.text = appDel.dataFetcher?.currentTitle
+            }
+        }
+    }
+    
     @IBOutlet weak var textDisplay: UILabel!
     
     @IBAction func controlActivated (control: UIControl) {
@@ -23,6 +31,14 @@ class ViewController: UIViewController {
         if let appDel = UIApplication.shared.delegate as? AppDelegate {
             self.textDisplay.text = appDel.dataFetcher?.currentTitle
         }
+        let notCenter = NotificationCenter.default
+        notCenter.addObserver(self, selector: #selector(updateDisplay), name: dataDoneNotification, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        let notCenter = NotificationCenter.default
+        notCenter.removeObserver(self, name: dataDoneNotification, object: nil)
     }
 
     override func viewDidLoad() {

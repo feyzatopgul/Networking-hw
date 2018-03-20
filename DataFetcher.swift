@@ -7,6 +7,7 @@
 //
 
 import Foundation
+let dataDoneNotification = Notification.Name(rawValue: "dataDoneNotification")
 
 class DataFetcher {
     let url: String
@@ -57,6 +58,8 @@ class DataFetcher {
             }
             appTitles = titles
             print ("\(titles)")
+            let notCenter = NotificationCenter.default
+            notCenter.post(name: dataDoneNotification, object: nil)
         }
         catch {
             reportFailure(message: "Decoding error: \(error.localizedDescription)")
