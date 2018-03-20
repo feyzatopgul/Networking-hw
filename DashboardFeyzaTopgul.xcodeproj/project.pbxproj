@@ -13,6 +13,7 @@
 		62754924205E05BC00DD0F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62754923205E05BC00DD0F13 /* Assets.xcassets */; };
 		62754927205E05BC00DD0F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62754925205E05BC00DD0F13 /* LaunchScreen.storyboard */; };
 		6275492F205E062D00DD0F13 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275492E205E062D00DD0F13 /* DataFetcher.swift */; };
+		627549312060C9E800DD0F13 /* TopAppsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627549302060C9E800DD0F13 /* TopAppsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		62754926205E05BC00DD0F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62754928205E05BC00DD0F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6275492E205E062D00DD0F13 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		627549302060C9E800DD0F13 /* TopAppsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				6275492E205E062D00DD0F13 /* DataFetcher.swift */,
+				627549302060C9E800DD0F13 /* TopAppsData.swift */,
 				6275491B205E05BC00DD0F13 /* DashboardFeyzaTopgul */,
 				6275491A205E05BC00DD0F13 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6275492F205E062D00DD0F13 /* DataFetcher.swift in Sources */,
+				627549312060C9E800DD0F13 /* TopAppsData.swift in Sources */,
 				6275491F205E05BC00DD0F13 /* ViewController.swift in Sources */,
 				6275491D205E05BC00DD0F13 /* AppDelegate.swift in Sources */,
 			);
