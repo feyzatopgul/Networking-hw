@@ -14,6 +14,7 @@
 		62754927205E05BC00DD0F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62754925205E05BC00DD0F13 /* LaunchScreen.storyboard */; };
 		6275492F205E062D00DD0F13 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275492E205E062D00DD0F13 /* DataFetcher.swift */; };
 		627549312060C9E800DD0F13 /* TopAppsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627549302060C9E800DD0F13 /* TopAppsData.swift */; };
+		62E1F9DD20637A9900315D68 /* AppTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E1F9DC20637A9900315D68 /* AppTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		62754928205E05BC00DD0F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6275492E205E062D00DD0F13 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		627549302060C9E800DD0F13 /* TopAppsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppsData.swift; sourceTree = "<group>"; };
+		62E1F9DC20637A9900315D68 /* AppTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				62754923205E05BC00DD0F13 /* Assets.xcassets */,
 				62754925205E05BC00DD0F13 /* LaunchScreen.storyboard */,
 				62754928205E05BC00DD0F13 /* Info.plist */,
+				62E1F9DC20637A9900315D68 /* AppTableViewController.swift */,
 			);
 			path = DashboardFeyzaTopgul;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E1F9DD20637A9900315D68 /* AppTableViewController.swift in Sources */,
 				6275492F205E062D00DD0F13 /* DataFetcher.swift in Sources */,
 				627549312060C9E800DD0F13 /* TopAppsData.swift in Sources */,
 				6275491F205E05BC00DD0F13 /* ViewController.swift in Sources */,

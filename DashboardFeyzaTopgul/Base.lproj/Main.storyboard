@@ -44,7 +44,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UMm-XM-psy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Multi-Tap" id="5ng-Ok-Gcr"/>
+                    <tabBarItem key="tabBarItem" title="Multi-Tap" image="MultiTap" id="5ng-Ok-Gcr"/>
                     <connections>
                         <outlet property="textDisplay" destination="b11-HZ-cdD" id="CHJ-td-9Q5"/>
                     </connections>
@@ -52,6 +52,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTM-mZ-7pV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-460" y="67.916041979010501"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="Rih-rb-iPd">
+            <objects>
+                <tableViewController id="uG0-ND-2oo" customClass="AppTableViewController" customModule="DashboardFeyzaTopgul" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H8X-ui-hT5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dashboardCell" textLabel="T8h-Yg-ijD" detailTextLabel="cCb-Gy-urV" style="IBUITableViewCellStyleSubtitle" id="YGg-10-i1z">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YGg-10-i1z" id="fR4-vf-jDU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T8h-Yg-ijD">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cCb-Gy-urV">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uG0-ND-2oo" id="vEN-iy-b2f"/>
+                            <outlet property="delegate" destination="uG0-ND-2oo" id="wUb-Ay-Svj"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Table" image="Table" id="Yc5-a0-HsB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSq-zc-OlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-1267"/>
         </scene>
         <!--Tap-->
         <scene sceneID="7GU-vM-fDU">
@@ -86,7 +131,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1nh-mY-jwg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tap" id="1fP-L2-oQj"/>
+                    <tabBarItem key="tabBarItem" title="Tap" image="Tap" id="1fP-L2-oQj"/>
                     <connections>
                         <outlet property="textDisplay" destination="L4O-Bw-Bji" id="Fml-W8-jKh"/>
                     </connections>
@@ -107,6 +152,7 @@
                     <connections>
                         <segue destination="UzW-72-JhY" kind="relationship" relationship="viewControllers" id="h80-ap-cGR"/>
                         <segue destination="F6S-Jw-1di" kind="relationship" relationship="viewControllers" id="BHw-jd-YBE"/>
+                        <segue destination="uG0-ND-2oo" kind="relationship" relationship="viewControllers" id="7NZ-hl-GuS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZF-9E-Uny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,4 +160,9 @@
             <point key="canvasLocation" x="-1409" y="-265"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MultiTap" width="25" height="25"/>
+        <image name="Table" width="25" height="25"/>
+        <image name="Tap" width="25" height="25"/>
+    </resources>
 </document>
